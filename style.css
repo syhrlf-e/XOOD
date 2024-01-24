@@ -1,0 +1,195 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.warp-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  height: inherit;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.judul {
+  color: white;
+  font-size: 70px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.judul span {
+  color: #fc1478;
+}
+
+.desc {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  padding: 35px;
+}
+
+.butt-cta {
+  width: 400px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 400px;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  -webkit-border-radius: 400px;
+  -moz-border-radius: 400px;
+  -ms-border-radius: 400px;
+  -o-border-radius: 400px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.butt-cta:hover {
+  background-color: white;
+  color: #fc1478;
+  border: 1px solid #fc1478;
+  cursor: pointer;
+} */
+
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.warp-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%; /* Menyesuaikan lebar container */
+  max-width: 500px; /* Batas maksimal lebar container */
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; /* Menengahkan container */
+}
+
+.judul {
+  color: white;
+  font-size: 4.3em; /* Ukuran font tetap untuk perangkat kecil dan menengah */
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.judul span {
+  color: #fc1478;
+}
+
+.desc {
+  color: white;
+  font-size: 1em; /* Ukuran font tetap untuk perangkat kecil dan menengah */
+  font-weight: 300;
+  text-align: center;
+  padding: 30px;
+}
+
+.butt-cta {
+  width: 100%;
+  max-width: 400px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  /*Ukuranfonttetapuntukperangkatkecildanmenengah*/
+  border: 1px solid white;
+  border-radius: 70px;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+}
+
+/* Hover untuk perangkat non-touchscreen */
+.butt-cta:hover {
+  background-color: white;
+  color: #fc1478;
+  border: 1px solid #fc1478;
+  cursor: pointer;
+}
+
+/* Hover untuk perangkat touchscreen */
+@media (hover: none) {
+  .butt-cta:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+/* Media queries untuk perangkat dengan lebar viewport tertentu */
+@media screen and (max-width: 600px) {
+  .judul {
+    font-size: 2.5em;
+  }
+
+  .desc {
+    font-size: 1em;
+  }
+
+  .butt-cta {
+    height: 50px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .judul {
+    font-size: 2.8em;
+  }
+
+  .desc {
+    font-size: 1.1em;
+  }
+
+  .butt-cta {
+    height: 55px;
+    font-size: 1em;
+  }
+}
+
+/* Tambahkan media queries sesuai kebutuhan untuk perangkat dengan lebar viewport lainnya */

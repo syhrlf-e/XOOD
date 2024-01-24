@@ -1,0 +1,117 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fc1478;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul {
+  color: white;
+}
+
+.desc {
+  margin-top: 5px;
+  color: white;
+}
+
+/* Main Container Styles */
+.main-cont {
+  width: 100%;
+  min-height: 89.6vh;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainJudul {
+  color: #fc1478;
+  font-size: 100px;
+}
+
+.mainDesc {
+  color: white;
+  font-size: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  /* Header Styles for Small Screens */
+  header {
+    height: 60px;
+  }
+
+  .judul {
+    font-size: 18px;
+  }
+
+  .desc {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  /* Main Container Styles for Small Screens */
+  .main-cont {
+    min-height: 80vh;
+  }
+
+  .mainJudul {
+    font-size: 50px;
+  }
+
+  .mainDesc {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 991px) {
+  /* Header Styles for Medium Screens */
+  header {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .judul {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  /* Main Container Styles for Medium Screens */
+  .main-cont {
+    min-height: 100vh;
+  }
+
+  .mainJudul {
+    font-size: 70px;
+  }
+
+  .mainDesc {
+    font-size: 18px;
+  }
+}
+
+/* Tambahkan media queries sesuai kebutuhan untuk perangkat dengan lebar viewport lainnya */
